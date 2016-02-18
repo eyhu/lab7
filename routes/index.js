@@ -11,9 +11,11 @@ exports.view = function(req, res){
 	if (random_num > 0.5) {
 		projects["grid"] = false;
 		res.render('index', projects);
+		console.log(random_num);
 	}
 	else {
 		res.redirect('/grid');
+		console.log(random_num);
 	}
 };
 
